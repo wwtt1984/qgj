@@ -1,0 +1,189 @@
+/*****************************************/
+.noticelist .x-list-item{background: #fff;}
+.noticelist .x-list-item-first{background: #FFFFCC;}
+.noticelist .x-item-selected .x-list-disclosure {
+    background: #fff none;
+}
+.noticelist .x-item-selected .x-list-disclosure:before {
+    color: #fc8c02;
+}
+
+.hidden-disclosure-list .x-list-disclosure {
+    display: none;
+}
+
+.rylistcss{font-size:0.8em;min-height:3em;line-height:1.2em;}
+.rylistcss .avatar{background-position:center center;-webkit-border-radius:0.5em;border:0;border-radius:0.5em;width:45px;height:45px;margin:0 15px 0 0;float:left;}
+.rylistcss .avatar .num{background:#fc8c02;width:20px;height:20px;border-radius:10px;text-align:center;font-size:14px !important;color:#fff;float:right;white-space:nowrap;margin: -8px -5px 0 0;overflow:visible;text-overflow:ellipsis;box-shadow: 0px 2px 5px #888888;-moz-box-shadow: 0px 2px 5px #888888;-webkit-box-shadow: 0px 2px 5px #888888;}
+.rylistcss .message{min-width:50%;float:left;}
+.message h3{font-weight:bold;font-size:18px;}
+.message h4{color:#999;margin-top:10px;}
+/*.rylistcss .num{background:#fc8c02;width:20px;height:20px;border-radius:10px;text-align:center;font-size:14px !important;color:#fff;float:right;margin:12px 5px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}*/
+.noticelist .x-list-item-tpl .x-list-disclosure {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.noticelist .x-list-disclosure {
+    position: relative;
+    overflow: visible;
+    border: 0;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    background-image: none;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(top, #ffffff,#ffffff 3%,#f4f1f1);
+    background-image: -moz-linear-gradient(top, #ffffff,#ffffff 3%,#f4f1f1);
+    background-image: -o-linear-gradient(top, #ffffff,#ffffff 3%,#f4f1f1);
+    background-image: linear-gradient(top, #ffffff,#ffffff 3%,#f4f1f1);
+    width: 30px;
+    height: 30px;
+    margin: 18px 18px 0 0;
+}
+.noticelist .x-list-disclosure:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: 'D';
+    font-family: 'Pictos';
+    color: #fc8c02;
+    font-size: 34px;
+    text-align: center;
+    line-height: 0.9em;
+    text-shadow: 0px 0px 6px #eeeeee;
+}
+
+
+/*****************************************/
+.grid{
+	width:100%;margin:0;
+}
+.grid .grid-container{
+	width:100%;
+	margin:0;
+}
+.grid .x-list-item .x-list-item-body, .grid .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding: 12px 12px 0px 12px;
+}
+.grid .x-list-item {
+    display: inline-block;
+    width: auto;
+    border: none !important;
+}
+.x-landscape .grid .x-list-item {
+    display: inline-block;
+    width: 20%;
+    border: none !important;
+/*    padding-right: 10px;*/
+    
+}
+.x-portrait .grid .x-list-item {
+    display: inline-block;
+    width: 33%;
+    border: none !important;
+/*    padding-right: 10px;*/
+}
+.grid .x-list-item .movie {
+/*  display: flex;*/
+    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.grid .x-list-item .movie .img {
+/*  background-color: black;*/
+  width: 70px;
+  height: 70px;
+  background-position: 50%;
+  background-size: cover;
+  /*-webkit-box-shadow: 10px 10px 38px -8px black;
+  -moz-box-shadow: 10px 10px 38px -8px black;
+  box-shadow: 10px 10px 38px -8px black;*/
+}
+.grid .x-list-item .movie .title {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+/*****************************************/
+.history .x-list-item .x-list-item-body, .history .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding: 7px 7px;
+}
+.history .x-list-item {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    color: #000;
+    width: 100%;
+    padding: 0;
+	margin: 0;
+}
+.history .x-list-normal .x-list-item.x-list-item-tpl,.history.x-list-normal .x-list-item .x-dock-horizontal {
+	border-top: 0px;
+}
+.history .x-list-normal .x-list-item.x-item-selected.x-list-item-tpl,.history .x-list-normal .x-list-item.x-item-selected .x-dock-horizontal{
+	border-top-color: #ccc;
+}
+.history .x-list-item.x-item-selected .x-dock-horizontal, .history .x-list-item.x-item-selected.x-list-item-tpl{
+/*	background-color: #ccc;*/
+/*	background-image: -webkit-linear-gradient(top,#fff,#fff,#fff);*/
+    background: none;
+	color: #000;
+}
+.history .listitem{
+	min-height:17em; 
+	border: 1px #ddd solid; 
+	background: #fff;
+}
+.history .listheader{
+	min-height: 2.6em; 
+	width: 100%; 
+	background: #eee; 
+	font-size:18px; 
+	font-weight: normal; 
+	text-align: left;
+	padding:0.3em 8px 0 8px;
+}
+.history .listimg{
+	min-height: 1.8em; 
+	width: 100%; 
+	font-size:12px; 
+	font-weight: normal; 
+	text-align: right; 
+	color: #666;
+	padding:0 8px 0 8px;
+}
+.history .listtext{
+	min-height: 1.8em; 
+	width: 100%; 
+	font-size:16px; 
+	font-weight: normal; 
+	text-align: left;
+	padding:0.2em 8px 0 8px;
+	line-height: 1.4em;
+}
+
+
+/******************************************/
+.my-carousel-item{background:url(images/loading.png) no-repeat center center}@media screen and (orientation: portrait){.my-carousel-item-img{background-size:100% auto}}@media screen and (orientation: landscape){.my-carousel-item-img{background-size:auto 100%}}.x-portrait .my-carousel-item-img{background-size:100% auto}.x-landscape .my-carousel-item-img{background-size:auto 100%}.my-carousel-item-img{background-position:center center}.x-carousel-indicator>*{background-color:orange !important;opacity:0.4}.x-carousel-indicator>.x-carousel-indicator-active{opacity:1}
