@@ -29,13 +29,9 @@ Ext.define('WebInspect.view.news.News', {
         { 
             xclass: 'Ext.plugin.PullRefresh',
             pullText: '下拉刷新...',
-
             releaseText: '松开进行刷新...',
-
             loadingText: '正在刷新...',
-
             loadedText: '刷新完成.',
-
             lastUpdatedText: '刷新时间:&nbsp;'
         }],
         

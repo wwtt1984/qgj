@@ -67,7 +67,6 @@ Ext.define('WebInspect.controller.MainControl',{
 
     	
     	if(item == Ext.getCmp('news')){
-    		debugger;
     		this.view = Ext.getCmp('news')
     		this.view.destroy();
     		this.getMain().setNavigationBar({hidden: true});
@@ -290,7 +289,9 @@ Ext.define('WebInspect.controller.MainControl',{
         
         store.load(function(records, operation, success){
             Ext.Viewport.setMasked(false);
-            Ext.getCmp('newsdetail').onDataSet(record);  
+			
+			debugger;
+            Ext.getCmp('newsdetail').onDataSet(records[0]);  
         }, this);
 
         

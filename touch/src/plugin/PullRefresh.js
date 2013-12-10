@@ -260,6 +260,10 @@ Ext.define('Ext.plugin.PullRefresh', {
      * timeline between the new and the old records.
      */
     onLatestFetched: function(operation) {
+		
+		debugger;
+		//alert("111");
+		
         var store = this.getList().getStore(),
             oldRecords = store.getData(),
             newRecords = operation.getRecords(),

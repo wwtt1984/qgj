@@ -241,6 +241,8 @@ Ext.define('Ext.plugin.ListPaging', {
      * the new Store loads
      */
     onStoreBeforeLoad: function(store) {
+		
+		debugger;
         if (store.getCount() === 0) {
             this.getLoadMoreCmp().hide();
         }
