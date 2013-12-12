@@ -10,8 +10,7 @@ Ext.define('Ext.data.proxy.SkProxy', {
     },
 	
     buildRequest: function(operation) {
-    	
-		debugger;
+		
 		var request = this.callParent(arguments);
 		var url = request.getUrl();
 		this.putIOS(url);
